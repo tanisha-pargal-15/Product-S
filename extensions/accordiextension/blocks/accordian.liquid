@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Information</title>
+  <link rel="stylesheet" href="{{ 'demo.css' | asset_url }}">
+</head>
+<body>
+  <div class="product-information">
+    <div class="product-image">
+      <img id="product-image" src="https://img.freepik.com/premium-vector/cartoon-shirt_119631-192.jpg">
+    </div>
+    <div class="product-details">
+      <h1>Example Product Title</h1>
+      <p>This is a brief description of the product.</p>
+      <p id="product-price">Rs. 19.99</p>
+      <div class="product-variants">
+        <label>
+          <input type="radio" name="variant" value="1" checked>
+          Variant 1
+        </label>
+        <label>
+          <input type="radio" name="variant" value="2">
+          Variant 2
+        </label>
+      </div>
+      <div class="quantity-controls">
+        <button id="decrease-quantity" class="quantity-btn">-</button>
+        <input type="number" id="quantity" value="1" min="1" readonly>
+        <button id="increase-quantity" class="quantity-btn">+</button>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Add to Cart</button>
+    </div>
+  </div>
+  <script src="{{ 'script.js' | asset_url }}"></script>
+</body>
+</html>
+
+{% schema %}
+{
+  "name": "Product Details",
+  "target": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "block_heading",
+      "label": "Heading",
+      "default": "product"
+    },
+    {
+      "type": "textarea",
+      "id": "block_content",
+      "label": "Content",
+      "default": "Default Content"
+    }
+  ]
+}
+{% endschema %}
