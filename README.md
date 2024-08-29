@@ -1,3 +1,31 @@
++------------------+
+|   extensions     |
++------------------+
+         |
+         v
++------------------+
+| accordiextension |
++------------------+
+         |
+         v
++------------------+
+|      assets      |
++------------------+
+|  - CSS files     |
+|  - JavaScript files|
++------------------+
+         |
+         v
++------------------+
+|      blocks      |
++------------------+
+|  - .liquid code  |
++------------------+
+here are the folders where the code is written for the given task
+
+
+
+
 # Shopify App Template - Remix
 
 This is a template for building a [Shopify app](https://shopify.dev/docs/apps/getting-started) using the [Remix](https://remix.run) framework.
