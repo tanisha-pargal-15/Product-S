@@ -1,26 +1,8 @@
-+------------------+
-|   extensions     |
-+------------------+
-         |
-         v
-+------------------+
-| accordiextension |
-+------------------+
-         |
-         v
-+------------------+
-|      assets      |
-+------------------+
-|  - CSS files     |
-|  - JavaScript files|
-+------------------+
-         |
-         v
-+------------------+
-|      blocks      |
-+------------------+
-|  - .liquid code  |
-+------------------+
+The code I wrote is located within the extensions folder. Inside it, you'll find the following subfolders:
+
+accordiextension: Contains the main extension files.
+assets: Includes CSS and JavaScript files.
+blocks: Houses the .liquid code files.
 here are the folders where the code is written for the given task
 
 
